@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legendaryBookStore/static/css/main.beebac5b.css",
-    "main.js": "/legendaryBookStore/static/js/main.4095d1ce.js",
+    "main.js": "/legendaryBookStore/static/js/main.e18e8d94.js",
     "static/js/787.5dbbd0e4.chunk.js": "/legendaryBookStore/static/js/787.5dbbd0e4.chunk.js",
     "static/media/video3.mp4": "/legendaryBookStore/static/media/video3.95e2d2830383fe39185a.mp4",
     "static/media/banner.png": "/legendaryBookStore/static/media/banner.fd555ac665ddf1544915.png",
@@ -16,11 +16,11 @@
     "static/media/mi.PNG": "/legendaryBookStore/static/media/mi.c97ebe43383a361515b8.PNG",
     "index.html": "/legendaryBookStore/index.html",
     "main.beebac5b.css.map": "/legendaryBookStore/static/css/main.beebac5b.css.map",
-    "main.4095d1ce.js.map": "/legendaryBookStore/static/js/main.4095d1ce.js.map",
+    "main.e18e8d94.js.map": "/legendaryBookStore/static/js/main.e18e8d94.js.map",
     "787.5dbbd0e4.chunk.js.map": "/legendaryBookStore/static/js/787.5dbbd0e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.beebac5b.css",
-    "static/js/main.4095d1ce.js"
+    "static/js/main.e18e8d94.js"
   ]
 }
