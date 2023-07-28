@@ -69,8 +69,8 @@ export default function Home(props) {
 
     // Hiding payment visa details if cod is not selected 
     const [form, setform] = useState({ id: undefined, name: undefined, email: undefined, phoneNo: undefined, address: undefined, bookName: undefined, dollar: undefined, image: undefined, paymentMethod: undefined })
-    let [visa, setvisa] = useState(true)
-    let [cod, setcod] = useState(false)
+    let [visa, setvisa] = useState(false)
+    let [cod, setcod] = useState(true)
     let isCod = () => {
         if (cod === false) {
             setcod(true);
@@ -116,7 +116,7 @@ export default function Home(props) {
 
     }
     // Show the toast the book is issued or not when click on the submit button 
-    const clickOnHandle = () => {
+    const clickOnHandle = async() => {
         if ((!nameReg.test(form.name) || !emailReg.test(form.email) || !phoneNoReg.test(form.phoneNo) || !addressReg.test(form.address) || (!form.name || !form.email || !form.phoneNo || !form.address || !form.bookName))) {
             props.showAlert("red", "Error", "Your book is not issued");
             setform({...form, id: "", name: "", email: "", phoneNo: "", address: "" })
@@ -126,9 +126,9 @@ export default function Home(props) {
         else {
             props.showAlert("green", "Sucess", "Your book is sucessfully issued");
             issueBookInDataBase(form.id, form.name, form.email, form.phoneNo, form.address, form.bookName, form.dollar, form.image, "COD", form.bookMarked);
-            setform({ name: undefined, email: undefined, phoneNo: undefined, address: undefined, bookName: undefined, dollar: undefined })
-            setform({ name: "", email: "", phoneNo: "", address: "", bookName: "", dollar: "" })
+            await setform({ name: "", email:"", phoneNo: "", address: "", bookName: "", dollar: "" })
             fetchData()
+            setform({name: undefined, email: undefined, phoneNo: undefined, address: undefined, bookName: undefined, dollar: undefined })
         }
     }
 
@@ -218,7 +218,7 @@ export default function Home(props) {
                         <input type="textarea" id="bookName" value={form.bookName} onChange={handleOnChangeBookName} className={conform === "0" && conform !== null ? "title1 valid" : "title1 validPro"} placeholder="Enter book name " required />
                         {conform === "0" && conform !== null && <small className="errorWord">Enter valid book name </small>}
                     </div>
-                    <label htmlFor="text">Dollar($)</label>
+                    <label htmlFor="number">Dollar($)</label>
                     <input type="number" value={conform === "1" ? form.dollar : "0"} readOnly={true} className={conform === "0" && conform !== null ? "title1 valid" : "title1 validPro"} />
 
                     <label htmlFor="radio">Payment method</label>
@@ -241,7 +241,7 @@ export default function Home(props) {
                             <input type="password" className="title1" onChange={handleOnChange} placeholder="Enter CVV" />
                         </div>
                     }
-                    <label htmlFor="submit" className="title1" label />
+                    <label  className="title1" label />
                     <button className="subBtn" onClick={clickOnHandle}>Submit</button>
                 </div>
             </main>

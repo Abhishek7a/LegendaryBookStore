@@ -26,7 +26,7 @@ function App() {
     sety(json)
   }
   useEffect(() => {
-    fetchD();
+    // fetchD();
     fetchData();
   }, [])
 

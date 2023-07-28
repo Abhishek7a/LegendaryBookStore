@@ -13,7 +13,7 @@ export default function Form(props) {
     }
     // Update the details the in the database
     const conform= async () =>{
-        const host = "http://localhost:5000/update";
+        const host = "https://legendary-book-store-backend.vercel.app/update";
          await fetch(host, {
             method: 'PUT',
             headers: {
@@ -30,7 +30,7 @@ export default function Form(props) {
                 <input className='edit' type="text" id='name' onChange={handleOnChange}  placeholder='Enter Your Name'></input>
                 <input className='edit' type="email" id='email' onChange={handleOnChange} placeholder='Enter Your Email'></input>
                 <input className='edit' type="number" id='phoneNo' onChange={handleOnChange} placeholder='Enter Your PhoneNO'></input>
-                <button className='formBtn' onClick={conform()}>Conform</button>
+                <button className='formBtn' onClick={conform}>Conform</button>
                 <button className='formBtn ' onClick={cancle}>Cancle</button>
             </form>
             }

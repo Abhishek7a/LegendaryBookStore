@@ -1,7 +1,7 @@
 @media only screen and (max-width: 800px) {
   body {
-    font-family:  'Ubuntu' ;
-}
+    font-family: "Roboto";
+  }
   .middleNav {
     flex-direction: column;
     position: absolute;
@@ -92,13 +92,28 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .grid{
+    padding-left: 60px;
+    padding-right: 60px;
+
+  }
   .logo {
-    margin-left: 30%;
+    margin-left:  14%;
     height: 3em;
   }
-
-  .title1 {
-    width: 200px;
+  th{
+    padding-top: 10px;
+  }
+  .centerContent {
+    width: 100%; 
+  }
+  .issuBtn {
+    padding: 5px;
+    margin: auto;
+  }
+  .issuedBtn {
+    padding: 5px;
+    margin: auto;
   }
 
   #Message {
@@ -109,10 +124,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .red{
+  .red {
     margin-bottom: 20%;
   }
-  .mainPara{
+  .mainPara {
     margin-bottom: 20%;
   }
   .nameSide {
@@ -125,15 +140,13 @@
 
   .bookName {
     margin-top: 30px;
+    font-size: larger;
   }
 
   .special {
     width: 12em;
   }
 
-  #form {
-    width: 15em;
-  }
 
   #paymentMethod {
     flex-direction: column;
@@ -146,9 +159,17 @@
   @media only screen and (max-width: 400px) {
     .centerB {
       display: inline;
-      font-size: xx-small;
+      font-size: small;
     }
-
+    .email{
+      width: 50%;
+    }
+    .name{
+      width: 28%;
+    }
+    th{
+      margin: auto;
+    }
     .content {
       display: grid;
     }
@@ -182,7 +203,7 @@
     .logoBorder {
       width: 45%;
     }
-    .svg{
+    .svg {
       margin-left: 0px;
     }
   }

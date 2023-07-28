@@ -25,9 +25,11 @@ export default function ReturnBook(props) {
             <main>
                 <table className="center">
                     <thead className="infoHead">
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>bookName</th>
+                        <tr>
+                            <th className='name'>Name</th>
+                            <th className='email'>Email</th>
+                            <th >bookName</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {props.data.map((user) => {
