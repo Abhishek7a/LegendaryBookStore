@@ -170,9 +170,7 @@
     th{
       margin: auto;
     }
-    .content {
-      display: grid;
-    }
+
 
     .info {
       display: flex;
