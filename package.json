@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "both": "concurrently \"npm run start\" \"npx json-server --watch books.json --port 8000\"",
+    "both": "concurrently \"npm run start\" \"nodemon backend/index.js\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
