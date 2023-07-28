@@ -7,7 +7,7 @@ export default function Home(props) {
     //  save data into database or API call
     let issueBookInDataBase;
     try {
-        const host = "http://localhost:5000/";
+        const host = "https://legendary-book-store-backend.vercel.app/";
         issueBookInDataBase = async (id, name, email, phoneNo, address, bookName, dollar, image, paymentMethod, bookMarked) => {
             await fetch(host, {
                 method: 'POST',
@@ -48,7 +48,7 @@ export default function Home(props) {
         }
     }
     // Fetch the data from the database
-    const URL = `http://localhost:5000/`;
+    const URL = `https://legendary-book-store-backend.vercel.app/`;
     const url = `${URL}read`;
     const fetchData = async () => {
         const response = await fetch(url);
@@ -126,6 +126,7 @@ export default function Home(props) {
         else {
             props.showAlert("green", "Sucess", "Your book is sucessfully issued");
             issueBookInDataBase(form.id, form.name, form.email, form.phoneNo, form.address, form.bookName, form.dollar, form.image, "COD", form.bookMarked);
+            setform({ name: undefined, email: undefined, phoneNo: undefined, address: undefined, bookName: undefined, dollar: undefined })
             setform({ name: "", email: "", phoneNo: "", address: "", bookName: "", dollar: "" })
             fetchData()
         }
@@ -223,11 +224,11 @@ export default function Home(props) {
                     <label htmlFor="radio">Payment method</label>
                     <div id="paymentMethod">
                         <input type="radio" onClick={isCod} className="inline" onChange={handleOnChange} name="paymentMethod" checked={visa === true ? "checked" : ""} />
-                        <img className="PaymentImg" src="visa.PNG" alt="" />
+                        <img className="PaymentImg" src="https://raw.githubusercontent.com/Abhishek7a/legendaryBookStore/main/src/assets/visa.PNG" alt="" />
                         <input type="radio" onClick={isCod} className="inline" onChange={handleOnChange} name="paymentMethod"
                             checked={cod === true ? "checked" : ""}
                         />
-                        <img className="PaymentImg" src="cod.PNG" alt="" />
+                        <img className="PaymentImg" src="https://raw.githubusercontent.com/Abhishek7a/legendaryBookStore/main/src/assets/cod.PNG" alt="" />
                     </div>
                     {cod === false &&
                         <div className="cod">

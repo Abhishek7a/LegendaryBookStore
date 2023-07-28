@@ -8,7 +8,7 @@ export default function ReturnBook(props) {
         props.frontDelete();
     }
     useEffect(() => {
-        // props.fetchData()
+        props.fetchData()
     }, [])
     // To Show the toast when click on the dustbin icon
     const remove = (id) => {
