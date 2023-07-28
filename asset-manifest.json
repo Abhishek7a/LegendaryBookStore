@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/legendaryBookStore/static/css/main.beebac5b.css",
-    "main.js": "/legendaryBookStore/static/js/main.e18e8d94.js",
+    "main.css": "/legendaryBookStore/static/css/main.fc2e9edc.css",
+    "main.js": "/legendaryBookStore/static/js/main.85398796.js",
     "static/js/787.5dbbd0e4.chunk.js": "/legendaryBookStore/static/js/787.5dbbd0e4.chunk.js",
     "static/media/video3.mp4": "/legendaryBookStore/static/media/video3.95e2d2830383fe39185a.mp4",
     "static/media/banner.png": "/legendaryBookStore/static/media/banner.fd555ac665ddf1544915.png",
@@ -15,12 +15,12 @@
     "static/media/google.PNG": "/legendaryBookStore/static/media/google.190952befa58ebe5df8d.PNG",
     "static/media/mi.PNG": "/legendaryBookStore/static/media/mi.c97ebe43383a361515b8.PNG",
     "index.html": "/legendaryBookStore/index.html",
-    "main.beebac5b.css.map": "/legendaryBookStore/static/css/main.beebac5b.css.map",
-    "main.e18e8d94.js.map": "/legendaryBookStore/static/js/main.e18e8d94.js.map",
+    "main.fc2e9edc.css.map": "/legendaryBookStore/static/css/main.fc2e9edc.css.map",
+    "main.85398796.js.map": "/legendaryBookStore/static/js/main.85398796.js.map",
     "787.5dbbd0e4.chunk.js.map": "/legendaryBookStore/static/js/787.5dbbd0e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.beebac5b.css",
-    "static/js/main.e18e8d94.js"
+    "static/css/main.fc2e9edc.css",
+    "static/js/main.85398796.js"
   ]
 }
